@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PillDetect AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>💊 PillDetect AI</h1>
+  <p>AI-Powered Tablet Detection & Counting</p>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>📷 Upload Tablet Image</h2>
+
+    <input type="file" id="imageInput" accept="image/*">
+
+    <div class="preview">
+      <img id="previewImage" alt="Tablet preview">
+    </div>
+
+    <button onclick="analyzeImage()">🔍 Detect Tablets</button>
+  </section>
+
+  <section class="results card">
+    <h2>📊 Detection Results</h2>
+
+    <div class="result-box">
+      <span>💊 Tablets Detected</span>
+      <strong id="tabletCount">0</strong>
+    </div>
+
+    <div class="result-box">
+      <span>🔤 Visible Marking</span>
+      <strong id="marking">Not analyzed</strong>
+    </div>
+
+    <div class="result-box">
+      <span>⚠️ Verification</span>
+      <strong id="verification">Waiting for image</strong>
+    </div>
+
+    <p class="note">
+      This is a visual detection prototype and does not confirm
+      the identity or safety of any medicine.
+    </p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>                  
